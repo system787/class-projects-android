@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vhoang52.cs273.orangecoastcollege.edu.occars.LoanSummaryActivity">
+
+    <ImageView
+        android:id="@+id/ocCarsLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/oc_cars_logo"/>
+
+    <TextView
+        android:id="@+id/loanSummaryTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ocCarsLogo"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:background="@color/steel_blue"
+        android:gravity="center"
+        android:text="@string/loan_summary"
+        android:textColor="@color/bone_white"/>
+
+    <TextView
+        android:id="@+id/report1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loanSummaryTextView"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginStart="@dimen/margin_large"
+        android:text="@string/report_line1"/>
+
+    <TextView
+        android:id="@+id/calculatedMonthlyPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loanSummaryTextView"
+        android:layout_toEndOf="@id/report1"
+        android:layout_toRightOf="@id/report1"
+        android:text="@string/dollar_sign"/>
+
+    <TextView
+        android:id="@+id/report2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/report1"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginStart="@dimen/margin_large"
+        android:text="@string/report_line2"/>
+
+    <TextView
+        android:id="@+id/stickerPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/report1"
+        android:layout_marginEnd="@dimen/vertical_large"
+        android:layout_marginRight="@dimen/vertical_large"
+        android:text="@string/dollar_sign"/>
+
+    <TextView
+        android:id="@+id/report3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/report2"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginStart="@dimen/margin_large"
+        android:text="@string/report_line3"/>
+
+    <TextView
+        android:id="@+id/downPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/report2"
+        android:layout_marginEnd="@dimen/vertical_large"
+        android:layout_marginRight="@dimen/vertical_large"
+        android:text="@string/dollar_sign"/>
+
+    <TextView
+        android:id="@+id/report4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/report3"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginStart="@dimen/margin_large"
+        android:text="@string/report_line4"/>
+    <TextView
+        android:id="@+id/calculatedTaxAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/report3"
+        android:layout_marginRight="@dimen/vertical_large"
+        android:layout_marginEnd="@dimen/vertical_large"
+        android:text="@string/dollar_sign"/>
+
+    <TextView
+        android:id="@+id/report5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/report4"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginStart="@dimen/margin_large"
+        android:text="@string/report_line5"/>
+
+    <TextView
+        android:id="@+id/calculatedTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/report4"
+        android:layout_marginRight="@dimen/vertical_large"
+        android:layout_marginEnd="@dimen/vertical_large"
+        android:text="@string/dollar_sign"/>
+
+    <TextView
+        android:id="@+id/report6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/report5"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginStart="@dimen/margin_large"
+        android:text="@string/report_line6"/>
+
+    <TextView
+        android:id="@+id/calculatedLoanAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/report5"
+        android:layout_marginRight="@dimen/vertical_large"
+        android:layout_marginEnd="@dimen/vertical_large"
+        android:text="@string/dollar_sign"/>
+
+    <TextView
+        android:id="@+id/report7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/report6"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:text="@string/report_line7"/>
+
+    <TextView
+        android:id="@+id/calculatedInterestAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/report6"
+        android:layout_marginRight="@dimen/vertical_large"
+        android:layout_marginEnd="@dimen/vertical_large"
+        android:text="@string/dollar_sign"/>
+
+    <TextView
+        android:id="@+id/report8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/report7"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginStart="@dimen/margin_large"
+        android:text="@string/report_line8"/>
+
+    <TextView
+        android:id="@+id/loanTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/years3"
+        android:layout_toRightOf="@id/report8"
+        android:layout_toEndOf="@id/report8"
+        android:layout_below="@id/report7"
+        android:layout_marginLeft="@dimen/xs"
+        android:layout_marginStart="@dimen/xs"/>
+
+    <TextView
+        android:id="@+id/report9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/report8"
+        android:layout_marginBottom="@dimen/small"
+        android:layout_marginLeft="@dimen/small"
+        android:layout_marginStart="@dimen/small"
+        android:text="@string/report_line9"/>
+
+    <TextView
+        android:id="@+id/report10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/report9"
+        android:layout_marginEnd="@dimen/small"
+        android:layout_marginLeft="@dimen/small"
+        android:layout_marginRight="@dimen/small"
+        android:layout_marginStart="@dimen/small"
+        android:text="@string/report_line10"/>
+
+    <TextView
+        android:id="@+id/report11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/report10"
+        android:layout_marginEnd="@dimen/small"
+        android:layout_marginLeft="@dimen/small"
+        android:layout_marginRight="@dimen/small"
+        android:layout_marginStart="@dimen/small"
+        android:text="@string/report_line11"/>
+
+    <TextView
+        android:id="@+id/report12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/report11"
+        android:layout_marginEnd="@dimen/small"
+        android:layout_marginLeft="@dimen/small"
+        android:layout_marginRight="@dimen/small"
+        android:layout_marginStart="@dimen/small"
+        android:text="@string/report_line12"/>
+
+    <Button
+        android:id="@+id/returnEntryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_centerHorizontal="true"
+        android:text="@string/go_data_entry"
+        android:textColor="@color/steel_blue"/>
+</RelativeLayout>

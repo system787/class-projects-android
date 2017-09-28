@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vhoang52.cs273.orangecoastcollege.edu.occars.PurchaseActivity">
+
+    <ImageView
+        android:id="@+id/ocCarsLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/oc_cars_logo"/>
+
+    <TextView
+        android:id="@+id/instructionTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ocCarsLogo"
+        android:background="@color/steel_blue"
+        android:gravity="center"
+        android:text="@string/instruction"
+        android:textColor="@color/bone_white"/>
+
+    <TextView
+        android:id="@+id/priceDollarSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/instructionTextView"
+        android:layout_marginEnd="@dimen/horizontal_half"
+        android:layout_marginRight="@dimen/horizontal_half"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="@string/dollar_sign"
+        android:textColor="@color/steel_blue"
+        />
+
+    <EditText
+        android:id="@+id/priceEditText"
+        android:layout_width="@dimen/edit_text_width"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_alignLeft="@+id/priceDollarSign"
+        android:layout_alignStart="@+id/priceDollarSign"
+        android:layout_below="@id/instructionTextView"
+        android:layout_marginLeft="@dimen/small"
+        android:layout_marginStart="@dimen/small"
+        android:layout_marginTop="@dimen/small"
+        android:background="@color/bone_white"
+        android:digits="1234567890"
+        android:gravity="center"
+        android:hint="@string/empty_hint"
+        android:inputType="numberDecimal"
+        android:maxLength="9"
+        android:scrollHorizontally="false"
+        android:textSize="@dimen/font_small"/>
+
+    <TextView
+        android:id="@+id/carPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/instructionTextView"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="@string/car_price"
+        android:textColor="@color/steel_blue"
+        android:textSize="@dimen/font_small"/>
+
+    <TextView
+        android:id="@+id/downDollarSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/priceDollarSign"
+        android:layout_marginEnd="@dimen/horizontal_half"
+        android:layout_marginRight="@dimen/horizontal_half"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="@string/dollar_sign"
+        android:textColor="@color/steel_blue"/>
+
+    <TextView
+        android:id="@+id/downTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carPriceTextView"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="@string/down_payment"
+        android:textColor="@color/steel_blue"
+        android:textSize="@dimen/font_small"/>
+
+    <EditText
+        android:id="@+id/downEditText"
+        android:layout_width="@dimen/edit_text_width"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_alignLeft="@id/downDollarSign"
+        android:layout_alignStart="@id/downDollarSign"
+        android:layout_below="@id/priceEditText"
+        android:layout_marginLeft="@dimen/small"
+        android:layout_marginStart="@dimen/small"
+        android:layout_marginTop="@dimen/small"
+        android:background="@color/bone_white"
+        android:digits="1234567890"
+        android:gravity="center"
+        android:hint="@string/empty_hint"
+        android:inputType="numberDecimal"
+        android:maxLength="9"
+        android:scrollHorizontally="false"
+        android:textSize="@dimen/font_small"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="@dimen/horizontal_half"
+        android:layout_height="@dimen/horizontal_half"
+        android:layout_below="@id/downTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/vertical_large"
+        android:background="@color/steel_blue"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/threeYearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/bone_white"
+            android:text="@string/years3"
+            android:textColor="@color/bone_white"
+            />
+
+        <RadioButton
+            android:id="@+id/fourYearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/bone_white"
+            android:text="@string/years4"
+            android:textColor="@color/bone_white"/>
+
+        <RadioButton
+            android:id="@+id/fiveYearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/bone_white"
+            android:text="@string/years5"
+            android:textColor="@color/bone_white"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/chooseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_centerInParent="true"
+        android:text="@string/loan_term"
+        android:textSize="@dimen/font_small"/>
+
+    <Button
+        android:id="@+id/loanReportButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:text="@string/loan_report_button_text"
+        android:textColor="@color/steel_blue"
+        android:textSize="@dimen/font_small"/>
+
+</RelativeLayout>

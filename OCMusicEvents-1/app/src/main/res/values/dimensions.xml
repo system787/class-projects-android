@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp280">280dp</dimen>
+    <dimen name="dp240">240dp</dimen>
+    <dimen name="dp200">200dp</dimen>
+    <dimen name="dp160">160dp</dimen>
+    <dimen name="dp100">100dp</dimen>
+    <dimen name="dp20">20dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+
+    <dimen name="font_title">24sp</dimen>
+    <dimen name="font_detail">14sp</dimen>
+</resources>

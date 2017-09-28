@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">OC Cars</string>
+
+    <!-- LAYOUT LABEL STRINGS -->
+    <string name="title_activity_main">Car Dealership</string>
+    <string name="instruction">Enter car purchase information.</string>
+    <string name="dollar_sign">$</string>
+    <string name="car_price">What is the price of your car?</string>
+    <string name="down_payment">What is your cash down payment?</string>
+    <string name="loan_term">Choose your loan term</string>
+    <string name="years3">3 years</string>
+    <string name="years4">4 years</string>
+    <string name="years5">5 years</string>
+    <string name="loan_summary">Your Loan Summary</string>
+    <string name="loan_report_button_text">Loan Report</string>
+    <string name="go_data_entry">Return to Data Entry</string>
+    <string name="empty_hint">00000</string>
+
+    <!-- REPORT STRINGS -->
+    <string name="report_line1"><b>Monthly Payment:</b></string>
+    <string name="report_line2">Car Sticker Price:</string>
+    <string name="report_line3">You will put down:</string>
+    <string name="report_line4">Taxed Amt:</string>
+    <string name="report_line5">Your Cost:</string>
+    <string name="report_line6">Borrowed Amount:</string>
+    <string name="report_line7">Interest Amount:</string>
+    <string name="report_line8">Loan Term is </string>
+
+    <string name="report_line9">NOTE: </string>
+    <string name="report_line10">1. Loan information is made available by OC Cars.</string>
+    <string name="report_line11">2. A sales tax rate of 8% is required in Costa Mesa.</string>
+    <string name="report_line12">3. Vehicles are financed at an annual interest rate of 9%.</string>
+</resources>

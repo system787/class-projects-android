@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="edit_text_height">30dp</dimen>
+    <dimen name="edit_text_width">60dp</dimen>
+
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="xs">4sp</dimen>
+    <dimen name="small">8sp</dimen>
+    <dimen name="horizontal_half">120dp</dimen>
+
+    <dimen name="vertical_large">60dp</dimen>
+
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_med">16sp</dimen>
+    <dimen name="font_large">24sp</dimen>
+</resources>
