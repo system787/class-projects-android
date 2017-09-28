@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paintbackground"
+    tools:context="vhoang52.cs273.orangecoastcollege.edu.paintestimator.MainActivity">
+
+    <TextView
+        android:id="@+id/titleHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_s"
+        android:text="@string/app_name"
+        android:textSize="@dimen/font_l"/>
+
+    <TextView
+        android:id="@+id/enterDimensionsHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleHead"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_s"
+        android:text="@string/enter_dimensions"/>
+
+    <LinearLayout
+        android:id="@+id/lengthLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enterDimensionsHint"
+        android:layout_marginTop="@dimen/margin_s"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lengthHint"
+            android:layout_width="@dimen/field_60"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_l"
+            android:layout_marginRight="@dimen/margin_l"
+            android:text="@string/length"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/lengthEditText"
+            android:layout_width="@dimen/field_70"
+            android:layout_height="@dimen/field_40"
+            android:layout_marginLeft="@dimen/margin_l"
+            android:layout_marginStart="@dimen/margin_l"
+            android:digits="0123456789."
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/widthLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lengthLinearLayout"
+        android:layout_marginTop="@dimen/margin_s"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/widthHint"
+            android:layout_width="@dimen/field_60"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_l"
+            android:layout_marginRight="@dimen/margin_l"
+            android:text="@string/width"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/widthEditText"
+            android:layout_width="@dimen/field_70"
+            android:layout_height="@dimen/field_40"
+            android:layout_marginLeft="@dimen/margin_l"
+            android:layout_marginStart="@dimen/margin_l"
+            android:digits="1234567890."
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/heightLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/widthLinearLayout"
+        android:layout_marginBottom="@dimen/margin_s"
+        android:layout_marginTop="@dimen/margin_s"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/heightHint"
+            android:layout_width="@dimen/field_60"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_l"
+            android:layout_marginRight="@dimen/margin_l"
+            android:text="@string/height"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/heightEditText"
+            android:layout_width="@dimen/field_70"
+            android:layout_height="@dimen/field_40"
+            android:layout_marginLeft="@dimen/margin_l"
+            android:layout_marginStart="@dimen/margin_l"
+            android:digits="1234567890."
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/enterDoorWindowHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heightLinearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_s"
+        android:text="@string/enter_door_window"/>
+
+    <LinearLayout
+        android:id="@+id/doorsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enterDoorWindowHint"
+        android:layout_marginTop="@dimen/margin_m"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/doorsHint"
+            android:layout_width="@dimen/field_60"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_l"
+            android:layout_marginRight="@dimen/margin_l"
+            android:text="@string/width"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/doorsEditText"
+            android:layout_width="@dimen/field_70"
+            android:layout_height="@dimen/field_40"
+            android:layout_marginLeft="@dimen/margin_l"
+            android:layout_marginStart="@dimen/margin_l"
+            android:digits="1234567890."
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/windowsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/doorsLinearLayout"
+        android:layout_marginTop="@dimen/margin_m"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/windowsHint"
+            android:layout_width="@dimen/field_60"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_l"
+            android:layout_marginRight="@dimen/margin_l"
+            android:text="@string/windows"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/windowsEditText"
+            android:layout_width="@dimen/field_70"
+            android:layout_height="@dimen/field_40"
+            android:layout_marginLeft="@dimen/margin_l"
+            android:layout_marginStart="@dimen/margin_l"
+            android:digits="1234567890."
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/windowsLinearLayout"
+        android:layout_marginTop="@dimen/margin_xs"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/compute_button_text"/>
+
+        <Button
+            android:id="@+id/helpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help_button_text"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/gallonsNeeded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/titleHead"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@id/titleHead"
+        android:layout_marginBottom="@dimen/margin_xl"
+        android:text="@string/blank"
+        android:textSize="@dimen/font_m"/>
+
+
+    <TextView
+        android:id="@+id/surfaceArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/gallonsNeeded"
+        android:layout_alignLeft="@id/titleHead"
+        android:layout_alignStart="@id/titleHead"
+        android:layout_centerHorizontal="true"
+        android:text="@string/blank"
+        android:textSize="@dimen/font_m"/>
+</RelativeLayout>

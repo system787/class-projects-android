@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paintbackground"
+    android:orientation="vertical"
+    tools:context="vhoang52.cs273.orangecoastcollege.edu.paintestimator.HelpActivity">
+
+    <TextView
+        android:id="@+id/estimatedPaint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/estimated"
+        android:textSize="@dimen/font_l"/>
+
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/field_50"
+        android:layout_below="@id/estimatedPaint"
+        android:layout_centerHorizontal="true"
+        android:text="@string/return_btn"/>
+
+    <TextView
+        android:layout_width="@dimen/field_240"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/returnButton"
+        android:layout_centerHorizontal="true"
+        android:text="@string/help_text"/>
+
+</RelativeLayout>

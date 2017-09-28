@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_l">24sp</dimen>
+    <dimen name="font_ml">18sp</dimen>
+    <dimen name="font_m">14sp</dimen>
+    <dimen name="font_s">12sp</dimen>
+
+    <dimen name="margin_xs">4dp</dimen>
+    <dimen name="margin_s">10dp</dimen>
+    <dimen name="margin_m">16dp</dimen>
+    <dimen name="margin_ml">22dp</dimen>
+    <dimen name="margin_l">28dp</dimen>
+    <dimen name="margin_xl">36dp</dimen>
+
+    <dimen name="field_70">70dp</dimen>
+    <dimen name="field_60">60dp</dimen>
+    <dimen name="field_50">50dp</dimen>
+    <dimen name="field_40">40dp</dimen>
+    <dimen name="field_30">30dp</dimen>
+    <dimen name="field_20">20dp</dimen>
+
+    <dimen name="field_240">240dp</dimen>
+</resources>
