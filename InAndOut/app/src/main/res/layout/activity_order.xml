@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/order_background"
+    tools:context="vhoang52.cs273.orangecoastcollege.edu.inandout.OrderActivity">
+
+    <LinearLayout
+        android:id="@+id/headerLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_l"
+        android:layout_marginTop="@dimen/margin_l"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_header"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_l"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/doubleDoubleLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerLinearLayout"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/doubleDoubleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/double_double"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_ml"/>
+
+        <EditText
+            android:id="@+id/doubleDoubleEditText"
+            android:layout_width="@dimen/field_140"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_m"
+            android:layout_marginLeft="@dimen/margin_m"
+            android:layout_marginRight="@dimen/margin_m"
+            android:layout_marginStart="@dimen/margin_m"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cheeseburgerLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/doubleDoubleLinearLayout"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cheeseburgerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cheeseburger"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_ml"/>
+
+        <EditText
+            android:id="@+id/cheeseburgerEditText"
+            android:layout_width="@dimen/field_140"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_m"
+            android:layout_marginLeft="@dimen/margin_m"
+            android:layout_marginRight="@dimen/margin_m"
+            android:layout_marginStart="@dimen/margin_m"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frenchFriesLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cheeseburgerLinearLayout"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/frenchFriesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/french_fries"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_ml"/>
+
+        <EditText
+            android:id="@+id/frenchFriesEditText"
+            android:layout_width="@dimen/field_140"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_m"
+            android:layout_marginLeft="@dimen/margin_m"
+            android:layout_marginRight="@dimen/margin_m"
+            android:layout_marginStart="@dimen/margin_m"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shakesLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frenchFriesLinearLayout"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/shakesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shakes"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_ml"/>
+
+        <EditText
+            android:id="@+id/shakesEditText"
+            android:layout_width="@dimen/field_140"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_m"
+            android:layout_marginLeft="@dimen/margin_m"
+            android:layout_marginRight="@dimen/margin_m"
+            android:layout_marginStart="@dimen/margin_m"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fountainDrinksLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shakesLinearLayout"
+        android:gravity="end"
+        android:layout_marginTop="@dimen/margin_s"
+        android:layout_marginBottom="@dimen/margin_s"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/fountainDrinksTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fountain_drinks"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_ml"/>
+
+        <View
+            android:layout_width="@dimen/field_140"
+            android:layout_height="@dimen/margin_m"
+            android:layout_marginEnd="@dimen/margin_m"
+            android:layout_marginLeft="@dimen/margin_m"
+            android:layout_marginRight="@dimen/margin_m"
+            android:layout_marginStart="@dimen/margin_m"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/smallDrinkLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fountainDrinksLinearLayout"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/smallDrinkTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/size_sm"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_ml"/>
+
+        <EditText
+            android:id="@+id/smallDrinkEditText"
+            android:layout_width="@dimen/field_140"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_m"
+            android:layout_marginLeft="@dimen/margin_m"
+            android:layout_marginRight="@dimen/margin_m"
+            android:layout_marginStart="@dimen/margin_m"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mediumDrinkLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/smallDrinkLinearLayout"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mediumDrinkTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/size_m"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_ml"/>
+
+        <EditText
+            android:id="@+id/mediumDrinkEditText"
+            android:layout_width="@dimen/field_140"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_m"
+            android:layout_marginLeft="@dimen/margin_m"
+            android:layout_marginRight="@dimen/margin_m"
+            android:layout_marginStart="@dimen/margin_m"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/largeDrinkLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mediumDrinkLinearLayout"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/largeDrinkTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/size_l"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_ml"/>
+
+        <EditText
+            android:id="@+id/largeDrinkEditText"
+            android:layout_width="@dimen/field_140"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_m"
+            android:layout_marginLeft="@dimen/margin_m"
+            android:layout_marginRight="@dimen/margin_m"
+            android:layout_marginStart="@dimen/margin_m"
+            android:digits="0123456789"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/placeOrderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/largeDrinkLinearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_m"
+        android:layout_marginTop="@dimen/margin_m"
+        android:text="@string/place_order_button"/>
+
+</RelativeLayout>

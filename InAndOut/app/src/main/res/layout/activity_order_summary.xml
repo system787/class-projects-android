@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/summary_background"
+    tools:context="vhoang52.cs273.orangecoastcollege.edu.inandout.OrderSummary">
+
+    <TextView
+        android:id="@+id/orderTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_m"
+        android:layout_marginStart="@dimen/margin_m"
+        android:layout_marginTop="@dimen/field_120"
+        android:text="@string/order_total"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_l"/>
+
+    <TextView
+        android:id="@+id/itemsOrdered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/orderTotal"
+        android:layout_alignStart="@id/orderTotal"
+        android:layout_below="@id/orderTotal"
+        android:layout_marginTop="@dimen/field_40"
+        android:text="@string/items_ordered"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/orderSubtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/orderTotal"
+        android:layout_alignStart="@id/orderTotal"
+        android:layout_below="@id/itemsOrdered"
+        android:text="@string/subtotal"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/orderTax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/orderTotal"
+        android:layout_alignStart="@id/orderTotal"
+        android:layout_below="@id/orderSubtotal"
+        android:text="@string/tax"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/startNewOrderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_new_button"
+        android:layout_alignLeft="@id/orderTotal"
+        android:layout_alignStart="@id/orderTotal"
+        android:layout_below="@id/orderTax"
+        android:textSize="@dimen/font_m"
+        android:layout_marginTop="@dimen/margin_l"/>
+
+</RelativeLayout>

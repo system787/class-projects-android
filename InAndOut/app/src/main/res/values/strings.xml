@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">In And Out</string>
+
+    <!-- Order activity -->
+    <string name="order_header"><b>Place an Order</b></string>
+    <string name="double_double">Double-Double %1$s</string>
+    <string name="cheeseburger">Cheeseburger %1$s</string>
+    <string name="french_fries">French Fries %1$s</string>
+    <string name="shakes">Shakes %1$s</string>
+    <string name="fountain_drinks">Fountain Drinks (pick size)</string>
+    <string name="size_sm">Small %1$s</string>
+    <string name="size_m">Medium %1$s</string>
+    <string name="size_l">Large %1$s</string>
+
+    <string name="place_order_button">Place Order</string>
+
+    <!-- Order summary -->
+    <string name="order_total"><b>Order Total: %1$s</b></string>
+    <string name="items_ordered">Items Ordered: %1$s</string>
+    <string name="subtotal">Subtotal: %1$s</string>
+    <string name="tax">Tax(%1$s): %2$s</string>
+
+    <string name="start_new_button">Start new order</string>
+</resources>

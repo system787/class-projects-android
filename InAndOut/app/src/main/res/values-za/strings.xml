@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">In And Out</string>
+    <string name="cheeseburger">乳酪汉堡 %1$s</string>
+    <string name="fountain_drinks">苏打 (尺寸)</string>
+    <string name="double_double">双双 %1$s</string>
+    <string name="french_fries">炸薯条 %1$s</string>
+    <string name="items_ordered">订购商品: %1$s</string>
+    <string name="order_header">下订单</string>
+    <string name="order_total">总</string>
+    <string name="place_order_button">下订单</string>
+    <string name="shakes">Nǎi xī %1$s</string>
+    <string name="size_l">大 %1$s</string>
+    <string name="size_m">中 %1$s</string>
+    <string name="size_sm">小 %1$s</string>
+    <string name="start_new_button">开始新订单</string>
+    <string name="subtotal">Xiǎo jì: %1$s</string>
+    <string name="tax">税(%1$s): %2$s</string>
+</resources>

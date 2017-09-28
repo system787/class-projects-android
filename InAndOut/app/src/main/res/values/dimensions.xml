@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="field_30">30dp</dimen>
+    <dimen name="field_40">40dp</dimen>
+    <dimen name="field_50">50dp</dimen>
+    <dimen name="field_60">60dp</dimen>
+    <dimen name="field_70">70dp</dimen>
+    <dimen name="field_80">80dp</dimen>
+
+    <dimen name="field_120">120dp</dimen>
+    <dimen name="field_140">140dp</dimen>
+    <dimen name="field_160">160dp</dimen>
+    <dimen name="field_200">200dp</dimen>
+    <dimen name="field_240">240dp</dimen>
+
+    <dimen name="margin_90">90dp</dimen>
+    <dimen name="margin_100">100dp</dimen>
+
+    <dimen name="margin_s">6dp</dimen>
+    <dimen name="margin_sm">9dp</dimen>
+    <dimen name="margin_m">12dp</dimen>
+    <dimen name="margin_ml">16dp</dimen>
+    <dimen name="margin_l">20dp</dimen>
+    <dimen name="margin_xl">24dp</dimen>
+
+    <dimen name="font_s">10sp</dimen>
+    <dimen name="font_m">12sp</dimen>
+    <dimen name="font_ml">16sp</dimen>
+    <dimen name="font_l">20sp</dimen>
+    <dimen name="font_xl">24sp</dimen>
+
+
+</resources>
