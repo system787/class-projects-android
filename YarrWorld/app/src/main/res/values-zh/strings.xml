@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Yarr World</string>
+    <string name="toast_button">Huang wo de jiao</string>
+    <string name="welcome_message">Huanying lai dao CS 273 - Mobile Application fazhan</string>
+</resources>

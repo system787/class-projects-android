@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/occ_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/welcome_message"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/occ_pirate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:src="@drawable/occpirate"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/occ_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/toast_button"
+        android:textSize="24sp"/>
+
+</LinearLayout>

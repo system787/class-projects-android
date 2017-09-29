@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vhoang52.cs273.orangecoastcollege.edu.shippingcalculator.MainActivity"
+    android:background="@drawable/shipping_background">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:animateLayoutChanges="true">
+
+        <RelativeLayout
+            android:id="@+id/informationDisplayRelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/headerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_vertical"
+                android:text="@string/header_text"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_medium"/>
+
+            <EditText
+                android:id="@+id/editTextUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/headerText"
+                android:layout_marginEnd="@dimen/margin_horizontal_span"
+                android:layout_marginStart="@dimen/margin_horizontal_span"
+                android:inputType="none"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextUser"
+                android:layout_centerHorizontal="true"
+                android:text="@string/ounces_label"
+                android:textSize="@dimen/font_small"/>
+
+            <TextView
+                android:id="@+id/baseCostLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextUser"
+                android:layout_marginLeft="@dimen/margin_horizontal"
+                android:layout_marginTop="@dimen/margin_vertical"
+                android:text="@string/base_cost"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/addedCostLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/baseCostLabel"
+                android:layout_alignStart="@+id/baseCostLabel"
+                android:layout_below="@+id/baseCostLabel"
+                android:text="@string/added_cost"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/totalCostLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/addedCostLabel"
+                android:layout_alignStart="@+id/addedCostLabel"
+                android:layout_below="@+id/addedCostLabel"
+                android:text="@string/total_cost"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/calculatedBaseCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/addedCostLabel"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/margin_horizontal"
+                android:layout_marginRight="@dimen/margin_horizontal"
+                android:gravity="end"
+                android:text="@string/base_cost_value"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/calculatedAddedCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/calculatedBaseCost"
+                android:layout_marginRight="@dimen/margin_horizontal"
+                android:layout_marginEnd="@dimen/margin_horizontal"
+                android:gravity="end"
+                android:text="@string/default_cost_value"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/calculatedTotalCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/calculatedAddedCost"
+                android:layout_marginBottom="@dimen/margin_vertical"
+                android:layout_marginEnd="@dimen/margin_horizontal"
+                android:layout_marginRight="@dimen/margin_horizontal"
+                android:gravity="end"
+                android:text="@string/base_cost_value"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorBlack"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/calculatorWidgetRelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/informationDisplayRelativeLayout"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/margin_vertical"
+            android:layout_marginTop="@dimen/margin_vertical">
+
+            <Button
+                android:id="@+id/buttonSeven"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginEnd="@dimen/button_margin"
+                android:layout_marginRight="@dimen/button_margin"
+                android:background="@color/colorPrimary"
+                android:text="@string/number_seven"/>
+
+            <Button
+                android:id="@+id/buttonEight"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginEnd="@dimen/button_margin"
+                android:layout_marginRight="@dimen/button_margin"
+                android:layout_toEndOf="@id/buttonSeven"
+                android:layout_toRightOf="@id/buttonSeven"
+                android:background="@color/colorPrimary"
+                android:text="@string/number_eight"/>
+
+            <Button
+                android:id="@+id/buttonNine"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_toEndOf="@id/buttonEight"
+                android:layout_toRightOf="@id/buttonEight"
+                android:background="@color/colorPrimary"
+                android:text="@string/number_nine"/>
+
+            <Button
+                android:id="@+id/buttonFour"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignLeft="@id/buttonSeven"
+                android:layout_alignStart="@id/buttonSeven"
+                android:layout_below="@id/buttonSeven"
+                android:layout_marginEnd="@dimen/button_margin"
+                android:layout_marginRight="@dimen/button_margin"
+                android:layout_marginTop="@dimen/button_margin"
+                android:background="@color/colorPrimary"
+                android:text="@string/number_four"/>
+
+            <Button
+                android:id="@+id/buttonFive"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_below="@id/buttonEight"
+                android:layout_marginEnd="@dimen/button_margin"
+                android:layout_marginRight="@dimen/button_margin"
+                android:layout_marginTop="@dimen/button_margin"
+                android:layout_toEndOf="@id/buttonFour"
+                android:layout_toRightOf="@id/buttonFour"
+                android:background="@color/colorPrimary"
+                android:text="@string/number_five"/>
+
+            <Button
+                android:id="@+id/buttonSix"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_below="@id/buttonNine"
+                android:layout_marginTop="@dimen/button_margin"
+                android:layout_toEndOf="@id/buttonFive"
+                android:layout_toRightOf="@id/buttonFive"
+                android:background="@color/colorPrimary"
+                android:text="@string/number_six"/>
+
+            <Button
+                android:id="@+id/buttonOne"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignLeft="@id/buttonFour"
+                android:layout_alignStart="@id/buttonFour"
+                android:layout_below="@id/buttonFour"
+                android:layout_marginEnd="@dimen/button_margin"
+                android:layout_marginRight="@dimen/button_margin"
+                android:layout_marginTop="@dimen/button_margin"
+                android:background="@color/colorPrimary"
+                android:text="@string/number_one"/>
+
+            <Button
+                android:id="@+id/buttonTwo"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_below="@id/buttonFive"
+                android:layout_marginEnd="@dimen/button_margin"
+                android:layout_marginRight="@dimen/button_margin"
+                android:layout_marginTop="@dimen/button_margin"
+                android:layout_toEndOf="@id/buttonOne"
+                android:layout_toRightOf="@id/buttonOne"
+                android:background="@color/colorPrimary"
+                android:text="@string/number_two"/>
+
+            <Button
+                android:id="@+id/buttonThree"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_below="@id/buttonSix"
+                android:layout_marginTop="@dimen/button_margin"
+                android:layout_toEndOf="@id/buttonTwo"
+                android:layout_toRightOf="@id/buttonTwo"
+                android:background="@color/colorPrimary"
+                android:text="@string/number_three"/>
+
+            <ImageButton
+                android:id="@+id/buttonBackspace"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignLeft="@id/buttonOne"
+                android:layout_alignStart="@id/buttonOne"
+                android:layout_below="@id/buttonOne"
+                android:layout_marginEnd="@dimen/button_margin"
+                android:layout_marginRight="@dimen/button_margin"
+                android:layout_marginTop="@dimen/button_margin"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="@dimen/elevation"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp">
+            </ImageButton>
+
+            <Button
+                android:id="@+id/buttonZero"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_below="@id/buttonTwo"
+                android:layout_marginEnd="@dimen/button_margin"
+                android:layout_marginRight="@dimen/button_margin"
+                android:layout_marginTop="@dimen/button_margin"
+                android:layout_toEndOf="@id/buttonBackspace"
+                android:layout_toRightOf="@id/buttonBackspace"
+                android:background="@color/colorPrimary"
+                android:text="@string/number_zero"/>
+
+            <Button
+                android:id="@+id/buttonDecimal"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_below="@id/buttonThree"
+                android:layout_marginTop="@dimen/button_margin"
+                android:layout_toEndOf="@id/buttonZero"
+                android:layout_toRightOf="@id/buttonZero"
+                android:background="@color/colorPrimaryDark"
+                android:foregroundGravity="top|center"
+                android:text="@string/number_decimal"
+                android:textSize="@dimen/font_big"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

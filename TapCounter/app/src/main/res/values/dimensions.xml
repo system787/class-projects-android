@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_big">36sp</dimen>
+    <dimen name="font_normal">20sp</dimen>
+    <dimen name="margin_top">48dp</dimen>
+    <dimen name="margin_bottom">48dp</dimen>
+</resources>

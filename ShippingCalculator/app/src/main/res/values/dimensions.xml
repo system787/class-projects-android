@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_big">24sp</dimen>
+    <dimen name="font_medium">18sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+
+    <dimen name="margin_horizontal_span">12dp</dimen>
+    <dimen name="margin_horizontal">30dp</dimen>
+
+    <dimen name="margin_horizontal_span_land">4dp</dimen>
+
+    <dimen name="margin_vertical">36dp</dimen>
+
+    <dimen name="button_width">72dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="button_margin">2dp</dimen>
+    <dimen name="elevation">3dp</dimen>
+
+</resources>

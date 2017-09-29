@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shipping Calculator</string>
+    <string name="added_cost">增加成本:</string>
+    <string name="base_cost">基本费用</string>
+    <string name="header_text">包装重量</string>
+    <string name="ounces_label">(盎司)</string>
+    <string name="total_cost">运费总成本</string>
+</resources>
