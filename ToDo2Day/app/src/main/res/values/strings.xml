@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ToDo2Day</string>
+
+    <string name="add">Add Task</string>
+    <string name="task">Enter task description</string>
+    <string name="delete">Clear all Tasks</string>
+    <string name="desc">Description</string>
+
+</resources>
