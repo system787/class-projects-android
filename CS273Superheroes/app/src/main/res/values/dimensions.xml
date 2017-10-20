@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="margin_button">2dp</dimen>
+    <dimen name="button_width">140dp</dimen>
+    <dimen name="button_height">50dp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="image_dimensions">240dp</dimen>
+
+
+    <dimen name="text_prompt">18sp</dimen>
+    <dimen name="text_result">30sp</dimen>
+</resources>

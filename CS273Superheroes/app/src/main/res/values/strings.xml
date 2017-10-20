@@ -1,0 +1,20 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="preferences_key"><xliff:g>quiz_key</xliff:g></string>
+    <string name="preferences_default">@string/type_a</string>
+    <string name="settings_header">Settings</string>
+    <string name="settings_quizzes">Quiz Type</string>
+    <string name="settings_descriptions">Choose superhero name, superpower, or one thing about them.</string>
+
+    <string name="prompt_finish">%1$d guesses, %2$d correct</string>
+    <string name="prompt_incorrect">Incorrect!</string>
+    <string name="prompt_reset">Reset Quiz</string>
+    <string name="prompt_restarted">Quiz will restart with your new settings.</string>
+
+    <string name="app_name">CS 273 Superheroes</string>
+    <string name="question_tracker">Question %1$d of %2$d</string>
+
+    <string name="type_description">Guess the %1$s</string>
+    <string name="type_a">Superhero Name</string>
+    <string name="type_b">Superpower</string>
+    <string name="type_c">One Thing</string>
+</resources>

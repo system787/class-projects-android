@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="quiz_types_list">
+        <item>@string/type_a</item>
+        <item>@string/type_b</item>
+        <item>@string/type_c</item>
+    </string-array>
+</resources>

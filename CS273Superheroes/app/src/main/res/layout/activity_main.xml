@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vhoang52.cs273.orangecoastcollege.edu.cs273superheroes.MainActivity">
+
+    <TextView
+        android:id="@+id/questionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        tools:text="Question %1$d of %2$d"
+        tools:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/heroImage"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_below="@+id/questionNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        tools:background="@drawable/toolsbackground"/>
+
+    <TextView
+        android:id="@+id/guessHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heroImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        tools:text="Guess the Superhero"
+        tools:textSize="18sp"/>
+
+    <RelativeLayout
+        android:id="@+id/buttonGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guessHint"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/guessOne"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            tools:text="Guess 1"/>
+
+        <Button
+            android:id="@+id/guessTwo"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"
+            android:layout_toEndOf="@id/guessOne"
+            android:layout_toRightOf="@id/guessOne"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            tools:text="Guess 2"/>
+
+        <Button
+            android:id="@+id/guessThree"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/guessOne"
+            android:layout_margin="2dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            tools:text="Guess 3"/>
+
+        <Button
+            android:id="@+id/guessFour"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/guessTwo"
+            android:layout_margin="2dp"
+            android:layout_toEndOf="@id/guessThree"
+            android:layout_toRightOf="@id/guessThree"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            tools:text="Guess 4"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/guessResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        tools:text="Incorrect Guess!"
+        tools:textSize="30sp"
+        tools:visibility="visible"/>
+
+</RelativeLayout>
